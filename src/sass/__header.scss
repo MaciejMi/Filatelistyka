@@ -26,6 +26,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
+
+		max-width: 700px;
 	}
 
 	&__title {
@@ -44,5 +46,83 @@
 	&__description {
 		color: c.$light-font-color;
 		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 576px) {
+	.header {
+		&__image {
+			background-image: url('../img/big-hero.jpg');
+		}
+
+		&__text-box {
+			padding: 2rem;
+		}
+
+		&__title {
+			h1 {
+				font-size: 8rem;
+			}
+
+			h2 {
+				font-size: 3rem;
+			}
+		}
+
+		&__description {
+			font-size: 2.2rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		&__text-box {
+			padding: 3rem;
+		}
+
+		&__title {
+			h1 {
+				font-size: 10rem;
+			}
+
+			h2 {
+				font-size: 4rem;
+			}
+		}
+
+		&__description {
+			font-size: 2.4rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		&__text-box {
+			padding: 4rem;
+		}
+
+		&__title {
+			h1 {
+				font-size: 12rem;
+			}
+
+			h2 {
+				font-size: 5rem;
+			}
+		}
+
+		&__description {
+			font-size: 2.6rem;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.header {
+		&__text-box {
+			padding: 0;
+		}
 	}
 }
