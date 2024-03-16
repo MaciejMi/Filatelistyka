@@ -1,3 +1,5 @@
+@use './_colors' as c;
+
 .header {
 	position: relative;
 	width: 100%;
@@ -12,5 +14,35 @@
 	}
 
 	&__shadow {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		inset: 0;
+		background-color: c.$alpha-dark-bg;
+	}
+
+	&__text-box {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__title {
+		font-family: 'Life Savers', serif;
+		h1 {
+			font-size: 4rem;
+			color: c.$main-color;
+		}
+
+		h2 {
+			font-size: 2rem;
+			color: c.$light-font-color;
+		}
+	}
+
+	&__description {
+		color: c.$light-font-color;
+		font-size: 1.8rem;
 	}
 }
