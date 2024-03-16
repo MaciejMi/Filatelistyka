@@ -1,0 +1,45 @@
+@use './_colors' as c;
+
+.about-me {
+	&__box {
+		margin-top: 2rem;
+		font-size: 2rem;
+	}
+
+	&__img {
+		margin: 2rem 0;
+		float: right;
+		max-width: 600px;
+		width: 100%;
+		border-radius: 50px;
+		border: 5px solid c.$main-color;
+	}
+
+	&__image-container {
+		padding: 0 3rem;
+	}
+}
+
+@media (min-width: 576px) {
+	.about-me {
+		&__box {
+			font-size: 2.2rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.about-me {
+		&__box {
+			font-size: 2.4rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.about-me {
+		&__box {
+			font-size: 2.4rem;
+		}
+	}
+}
