@@ -16,6 +16,21 @@
 		color: c.$light-font-color;
 	}
 }
+.white-block {
+	position: absolute;
+	height: 60px;
+	width: 60%;
+	background-color: #fff;
+
+	&--right {
+		right: -50px;
+		transform: skew(-45deg);
+	}
+
+	&--bottom {
+		bottom: 0;
+	}
+}
 
 @media (min-width: 576px) {
 	.button {
