@@ -35,7 +35,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 0.5rem;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		color: c.$light-font-color;
 		text-shadow: 1px 1px 5px c.$text-shadow;
 		transition: transform 0.3s;
@@ -65,11 +65,11 @@
 			font-size: 2rem;
 
 			p:first-of-type {
-				font-size: 3rem;
+				font-size: 2.5rem;
 			}
 
 			i {
-				font-size: 4rem;
+				font-size: 3rem;
 			}
 		}
 	}
@@ -83,10 +83,10 @@
 		}
 
 		&__card {
-			font-size: 3rem;
+			font-size: 2.5rem;
 
 			p:first-of-type {
-				font-size: 4rem;
+				font-size: 3.5rem;
 			}
 
 			i {
@@ -98,10 +98,10 @@
 @media (min-width: 992px) {
 	.achievments {
 		&__card {
-			font-size: 4rem;
+			font-size: 2.8rem;
 
 			p:first-of-type {
-				font-size: 5rem;
+				font-size: 3.4rem;
 			}
 
 			i {

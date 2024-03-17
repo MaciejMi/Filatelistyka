@@ -4,16 +4,23 @@
 	padding: 1rem 2rem;
 	border: 1px solid c.$main-color;
 	border-radius: 50px;
-
 	width: fit-content;
-
 	text-decoration: none;
 	color: c.$light-font-color;
-
 	transition: background-color 0.3s;
+	cursor: pointer;
 	&:hover {
 		background-color: c.$main-color;
 		color: c.$light-font-color;
+	}
+
+	&--dark {
+		color: c.$dark-font-color;
+	}
+
+	&--width {
+		width: 200px;
+		text-align: center;
 	}
 }
 .white-block {
