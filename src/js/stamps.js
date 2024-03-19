@@ -65,24 +65,23 @@ const toggleActive = () => {
 }
 
 let isFirst = true
-
 data.forEach(item => {
-	const button = document.createElement('button')
+	const button = document.createElement('a')
 	button.className = `button button--dark button--width`
 	button.textContent = item.city
 
 	button.addEventListener('click', () => {
-		toggleActive()
-		button.classList.toggle('button--active')
+		document.querySelectorAll('.button--dark').forEach(btn => {
+			btn.classList.remove('button--active')
+		})
+
+		button.classList.add('button--active')
+
 		cardTitle.textContent = item.city
 		cardDescription.textContent = item.text
 		cardUrl.setAttribute('src', item.img)
 	})
 
-	if (isFirst) {
-		button.classList.add('button--active')
-		isFirst = false
-	}
-
+	button.setAttribute('href', '#cardTitle')
 	stampsMenu.appendChild(button)
 })

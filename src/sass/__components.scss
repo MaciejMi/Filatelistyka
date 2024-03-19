@@ -27,7 +27,8 @@
 		background-color: c.$main-color;
 		color: c.$light-font-color;
 		transition: color 0.3s, background-color 0.3s;
-		&:hover {
+		&:hover,
+		&:active {
 			background: none;
 			color: c.$dark-font-color;
 		}
