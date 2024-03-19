@@ -1,5 +1,12 @@
 @use './_colors' as c;
 
+.wrapper {
+	padding: 2rem;
+	margin: 0 auto;
+	max-width: 1440px;
+	width: 100%;
+}
+
 .button {
 	padding: 1rem 2rem;
 	border: 1px solid c.$main-color;
