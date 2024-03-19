@@ -28,11 +28,11 @@
 		color: c.$light-font-color;
 	}
 }
-.white-block {
+.block {
 	position: absolute;
 	height: 60px;
 	width: 60%;
-	background-color: #fff;
+	background-color: c.$white-background-color;
 	transform: skew(-45deg);
 	z-index: 100;
 
@@ -50,6 +50,10 @@
 	&--top {
 		top: 0;
 	}
+
+	&--dark {
+		background-color: c.$dark-background-color;
+	}
 }
 
 .section {
@@ -59,6 +63,10 @@
 		color: c.$main-color;
 		text-transform: uppercase;
 		font-size: 2rem;
+	}
+
+	&--dark {
+		background: c.$dark-background-color;
 	}
 }
 
