@@ -22,6 +22,11 @@
 		width: 200px;
 		text-align: center;
 	}
+
+	&--active {
+		background-color: c.$main-color;
+		color: c.$light-font-color;
+	}
 }
 .white-block {
 	position: absolute;

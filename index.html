@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap" rel="stylesheet">
     <!-- JS -->
     <script src="./dist/js/nav.min.js" defer></script>
+    <script src="./dist/js/stamps.min.js" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/css/hamburger.min.css">
     <link rel="stylesheet" href="./dist/css/style.min.css">
@@ -75,7 +76,7 @@
     <main class="main">
         <section class="section about-me">
             <div class="wrapper">
-                <div class="section__heading">o mnie</div>
+                <h2 class="section__heading">o mnie</h2>
                 <div class="about-me__box">
                     <p>
                     <div class="about-me__image-container">
@@ -133,26 +134,29 @@
         <section class="section stamps">
             <div class="wrapper">
                 <h2 class="section__heading">Znaczki</h2>
-                <menu class="stamps__menu">
-                    <div class="button button--dark button--width">Białystok</div>
-                    <div class="button button--dark button--width">Kraków</div>
-                    <div class="button button--dark button--width">Białystok</div>
-                    <div class="button button--dark button--width">Kraków</div>
-                    <div class="button button--dark button--width">Białystok</div>
-                    <div class="button button--dark button--width">Kraków</div>
-                    <div class="button button--dark button--width">Białystok</div>
-                    <div class="button button--dark button--width">Kraków</div>
-                    <div class="button button--dark button--width">Białystok</div>
-                    <div class="button button--dark button--width">Kraków</div>
-                    <div class="button button--dark button--width">Białystok</div>
-                    <div class="button button--dark button--width">Kraków</div>
-                    <div class="button button--dark button--width">Białystok</div>
-                    <div class="button button--dark button--width">Kraków</div>
-                    <div class="button button--dark button--width">Białystok</div>
-                    <div class="button button--dark button--width">Kraków</div>
-                    <div class="button button--dark button--width">Białystok</div>
-                    <div class="button button--dark button--width">Kraków</div>
+                <menu class="stamps__menu" id="stampsMenu">
+
                 </menu>
+                <div class="stamps__box">
+                    <div class="stamps__background">
+                        <img src="./dist/img/stamps--main.png" alt="Znaczek pocztowy z Francji (Paryż)">
+                    </div>
+                    <div class="stamps__shadow">
+                        <div class="stamps__text-box">
+                            <h3>Wrocław</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui vero laudantium
+                                ipsam
+                                nesciunt deleniti explicabo consequuntur eius culpa quos quae veniam aliquid accusamus
+                                cumque temporibus
+                                mollitia amet sint expedita corporis voluptas repudiandae totam. Id saepe veritatis
+                                aperiam eius quasi
+                                enim quibusdam corporis
+                            </p>
+                            <a href="#" class="button">Skontaktuj się ze mną</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
