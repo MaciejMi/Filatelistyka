@@ -1,73 +1,48 @@
 const data = [
 	{
 		city: 'Białystok',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui vero laudantium ipsam
-        nesciunt deleniti explicabo consequuntur eius culpa quos quae veniam aliquid accusamus cumque temporibus
-        mollitia amet sint expedita corporis voluptas repudiandae totam. Id saepe veritatis aperiam eius quasi
-        enim quibusdam corporis!`,
-		img: 'https://cdn.pixabay.com/photo/2014/10/11/20/49/postage-stamps-484991_1280.jpg',
+		text: 'Białystok to piękne miasto na wschodzie Polski, znane z bogatej historii i pięknych zabytków. Znaczki pocztowe z Białegostoku są niezwykle cenne i poszukiwane przez kolekcjonerów.',
+		img: 'https://ocdn.eu/pulscms-transforms/1/iO8k9kpTURBXy85MjNkNmU5ZDFhYjIwMDJkZWEzYzZkODA5NTY0NjBiYi5qcGeTlQMBAM0P1c0I6JUCzQSwAMPDkwmmNGNkOTVjBt4AAaEwAQ/bialystok.jpeg',
 	},
 	{
 		city: 'Raków',
-		text: `Lcdwadcwacwacwdita corporis voluptas repudiandae totam. Id saepe veritatis aperiam eius quasi
-        enim quibusdam corporis!`,
-		img: 'https://cdn.pixabay.com/photo/2016/03/31/15/39/bluenose-1293452_1280.png',
-	},
-	{
-		city: 'Raków',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui vero laudantium ipsam
-        nesciunt deleniti explicabo consequuntur eius culpa quos quae veniam aliquid accusamus cumque temporibus
-        mollitia amet sint expedita corporis voluptas repudiandae totam. Id saepe veritatis aperiam eius quasi
-        enim quibusdam corporis!`,
-		img: 'https://cdn.pixabay.com/photo/2013/07/18/10/58/vintage-163677_1280.jpg',
+		text: 'Raków to urokliwa miejscowość w Polsce, otoczona malowniczą przyrodą. Znaczki pocztowe z Rakowa są popularne ze względu na swoją unikalność i uroczysty design.',
+		img: 'https://upload.wikimedia.org/wikipedia/commons/8/86/Plac_Wolno%C5%9Bci_w_Rakowie_9.jpg',
 	},
 	{
 		city: 'Kielce',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui vero laudantium ipsam
-        nesciunt deleniti explicabo consequuntur eius culpa quos quae veniam aliquid accusamus cumque temporibus
-        mollitia amet sint expedita corporis voluptas repudiandae totam. Id saepe veritatis aperiam eius quasi
-        enim quibusdam corporis!`,
-		img: 'https://cdn.pixabay.com/photo/2014/10/11/20/49/postage-stamps-484991_1280.jpg',
+		text: 'Kielce to dynamicznie rozwijające się miasto, które łączy w sobie nowoczesność z tradycją. Znaczki pocztowe z Kielc są znane z pięknego wzornictwa i wysokiej jakości wykonania.',
+		img: 'https://kielce.travel/media/cache/homepage_slider/uploads/6169520eb092f.JPG',
 	},
 	{
 		city: 'Białystok',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui vero laudantium ipsam
-        nesciunt deleniti explicabo consequuntur eius culpa quos quae veniam aliquid accusamus cumque temporibus
-        mollitia amet sint expedita corporis voluptas repudiandae totam. Id saepe veritatis aperiam eius quasi
-        enim quibusdam corporis!`,
-		img: 'https://cdn.pixabay.com/photo/2014/10/11/20/49/postage-stamps-484991_1280.jpg',
+		text: 'Białystok to piękne miasto na wschodzie Polski, znane z bogatej historii i pięknych zabytków. Znaczki pocztowe z Białegostoku są niezwykle cenne i poszukiwane przez kolekcjonerów.',
+		img: 'https://ocdn.eu/pulscms-transforms/1/iO8k9kpTURBXy85MjNkNmU5ZDFhYjIwMDJkZWEzYzZkODA5NTY0NjBiYi5qcGeTlQMBAM0P1c0I6JUCzQSwAMPDkwmmNGNkOTVjBt4AAaEwAQ/bialystok.jpeg',
 	},
 	{
 		city: 'Raków',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui vero laudantium ipsam
-        nesciunt deleniti explicabo consequuntur eius culpa quos quae veniam aliquid accusamus cumque temporibus
-        mollitia amet sint expedita corporis voluptas repudiandae totam. Id saepe veritatis aperiam eius quasi
-        enim quibusdam corporis!`,
-		img: 'https://cdn.pixabay.com/photo/2014/10/11/20/49/postage-stamps-484991_1280.jpg',
+		text: 'Raków to urokliwa miejscowość w Polsce, otoczona malowniczą przyrodą. Znaczki pocztowe z Rakowa są popularne ze względu na swoją unikalność i uroczysty design.',
+		img: 'https://upload.wikimedia.org/wikipedia/commons/8/86/Plac_Wolno%C5%9Bci_w_Rakowie_9.jpg',
 	},
 	{
 		city: 'Kielce',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui vero laudantium ipsam
-        nesciunt deleniti explicabo consequuntur eius culpa quos quae veniam aliquid accusamus cumque temporibus
-        mollitia amet sint expedita corporis voluptas repudiandae totam. Id saepe veritatis aperiam eius quasi
-        enim quibusdam corporis!`,
-		img: 'https://cdn.pixabay.com/photo/2014/10/11/20/49/postage-stamps-484991_1280.jpg',
+		text: 'Kielce to dynamicznie rozwijające się miasto, które łączy w sobie nowoczesność z tradycją. Znaczki pocztowe z Kielc są znane z pięknego wzornictwa i wysokiej jakości wykonania.',
+		img: 'https://kielce.travel/media/cache/homepage_slider/uploads/6169520eb092f.JPG',
 	},
 	{
 		city: 'Białystok',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui vero laudantium ipsam
-        nesciunt deleniti explicabo consequuntur eius culpa quos quae veniam aliquid accusamus cumque temporibus
-        mollitia amet sint expedita corporis voluptas repudiandae totam. Id saepe veritatis aperiam eius quasi
-        enim quibusdam corporis!`,
-		img: 'https://cdn.pixabay.com/photo/2014/10/11/20/49/postage-stamps-484991_1280.jpg',
+		text: 'Białystok to piękne miasto na wschodzie Polski, znane z bogatej historii i pięknych zabytków. Znaczki pocztowe z Białegostoku są niezwykle cenne i poszukiwane przez kolekcjonerów.',
+		img: 'https://ocdn.eu/pulscms-transforms/1/iO8k9kpTURBXy85MjNkNmU5ZDFhYjIwMDJkZWEzYzZkODA5NTY0NjBiYi5qcGeTlQMBAM0P1c0I6JUCzQSwAMPDkwmmNGNkOTVjBt4AAaEwAQ/bialystok.jpeg',
 	},
 	{
 		city: 'Raków',
-		text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, qui vero laudantium ipsam
-        nesciunt deleniti explicabo consequuntur eius culpa quos quae veniam aliquid accusamus cumque temporibus
-        mollitia amet sint expedita corporis voluptas repudiandae totam. Id saepe veritatis aperiam eius quasi
-        enim quibusdam corporis!`,
-		img: 'https://cdn.pixabay.com/photo/2014/10/11/20/49/postage-stamps-484991_1280.jpg',
+		text: 'Raków to urokliwa miejscowość w Polsce, otoczona malowniczą przyrodą. Znaczki pocztowe z Rakowa są popularne ze względu na swoją unikalność i uroczysty design.',
+		img: 'https://upload.wikimedia.org/wikipedia/commons/8/86/Plac_Wolno%C5%9Bci_w_Rakowie_9.jpg',
+	},
+	{
+		city: 'Kielce',
+		text: 'Kielce to dynamicznie rozwijające się miasto, które łączy w sobie nowoczesność z tradycją. Znaczki pocztowe z Kielc są znane z pięknego wzornictwa i wysokiej jakości wykonania.',
+		img: 'https://kielce.travel/media/cache/homepage_slider/uploads/6169520eb092f.JPG',
 	},
 ]
 const stampsMenu = document.getElementById('stampsMenu')
