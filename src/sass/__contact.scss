@@ -17,4 +17,58 @@
 			color: c.$dark-font-color;
 		}
 	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		div {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
+			p {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+
+				label {
+					&::after {
+						content: '*';
+						color: red;
+					}
+				}
+			}
+
+			input,
+			textarea {
+				padding: 1rem 2rem;
+				font-family: Arial, Helvetica, sans-serif;
+
+				border: 1px solid c.$input-stroke;
+				border-radius: 12px;
+				resize: vertical;
+				min-width: 220px;
+
+				&:focus {
+					outline: none;
+					border: 1px solid c.$input-stroke-focus;
+				}
+			}
+
+			textarea {
+				width: 100%;
+				padding: 1rem 2rem;
+				font-family: Arial, Helvetica, sans-serif;
+
+				border: 1px solid c.$input-stroke;
+				border-radius: 12px;
+				resize: vertical;
+
+				&:focus {
+					outline: none;
+					border: 1px solid c.$input-stroke-focus;
+				}
+			}
+		}
+	}
 }
