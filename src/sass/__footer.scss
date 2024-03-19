@@ -1,0 +1,26 @@
+@use './_colors' as c;
+
+.footer {
+	padding: 2rem 0;
+	text-align: center;
+	width: 100%;
+	background-color: c.$dark-background-color;
+	color: c.$light-font-color;
+
+	span:first-of-type {
+		color: c.$main-color;
+	}
+}
+
+@media (min-width: 576px) {
+	.footer {
+		padding: 3rem 0;
+		font-size: 2rem;
+	}
+}
+@media (min-width: 768px) {
+	.footer {
+		padding: 4rem 0;
+		font-size: 2.5rem;
+	}
+}
