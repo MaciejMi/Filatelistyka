@@ -1,0 +1,20 @@
+@use './_colors' as c;
+
+.contact {
+	position: relative;
+
+	.wrapper {
+		margin-top: 5rem;
+	}
+
+	&__bar {
+		margin: 2rem 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		a {
+			text-decoration: none;
+			color: c.$dark-font-color;
+		}
+	}
+}
