@@ -1,4 +1,4 @@
-
+@use './_colors' as c;
 
 *,
 *::after,
@@ -16,6 +16,7 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: c.$light-background-color;
 }
 
 .wrapper {
