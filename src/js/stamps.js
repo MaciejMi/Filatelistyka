@@ -82,6 +82,6 @@ data.forEach(item => {
 		cardUrl.setAttribute('src', item.img)
 	})
 
-	button.setAttribute('href', '#cardTitle')
+	button.setAttribute('href', '#stamps')
 	stampsMenu.appendChild(button)
 })
