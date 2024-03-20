@@ -20,6 +20,7 @@
     <script src="./dist/js/nav.min.js" defer></script>
     <script src="./dist/js/stamps.min.js" defer></script>
     <script src="./dist/js/footer.min.js" defer></script>
+    <script src="./dist/js/contact.min.js" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/css/hamburger.min.css">
     <link rel="stylesheet" href="./dist/css/style.min.css">
@@ -184,7 +185,7 @@
                         łukaszkaczmarczyk@gmail.com</a>
                     <a href="tel: +48 785 559 894"> <i class="ti ti-phone"></i> +48 785 559 894</a>
                 </div>
-                <form class="contact__form">
+                <form class="contact__form" enctype="multipart/form-data">
                     <div>
                         <p>
                             <label for="firstname">Imię</label>
@@ -206,22 +207,20 @@
                             <input type="text" name="code" placeholder="Kod pocztowy" required>
                         </p>
                     </div>
-                    <div>
-                        <p>
-                            <label for="message">Wiadomość</label>
-                            <textarea name="message" placeholder="Wiadomość" required></textarea>
-                        </p>
+                    <div class="textarea-box">
+                        <label for="message">Wiadomość</label>
+                        <textarea name="message" placeholder="Wiadomość" required></textarea>
                     </div>
                     <div>
                         <p>
                             <label for="numberOfPhoto">Liczba zdjęć</label>
-                            <input type="text" name="numberOfPhoto" placeholder="Liczba zdjęć" required />
+                            <input type="text" name="numberOfPhoto" placeholder="Liczba zdjęć" id="numberOfPhotoInput"
+                                min="0" max="15" required />
                         </p>
                     </div>
-                    <div class="imageInput">
-
+                    <div class="imageInput" id="imageInput">
                     </div>
-                    <button class="button button--active" type="submit">Wyślij</button>
+                    <button class="button button--active" type="submit" multiple>Wyślij</button>
                 </form>
             </div>
         </section>

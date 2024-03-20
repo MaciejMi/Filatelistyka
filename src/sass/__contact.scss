@@ -21,6 +21,7 @@
 	&__form {
 		display: flex;
 		flex-direction: column;
+		width: fit-content;
 		gap: 3rem;
 		div {
 			display: flex;
@@ -56,10 +57,10 @@
 			}
 
 			textarea {
+				display: block;
 				width: 100%;
 				padding: 1rem 2rem;
 				font-family: Arial, Helvetica, sans-serif;
-
 				border: 1px solid c.$input-stroke;
 				border-radius: 12px;
 				resize: vertical;
@@ -68,6 +69,11 @@
 					outline: none;
 					border: 1px solid c.$input-stroke-focus;
 				}
+			}
+		}
+		.textarea-box {
+			width: 100%;
+			textarea {
 			}
 		}
 	}
