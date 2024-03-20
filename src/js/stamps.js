@@ -69,6 +69,10 @@ const data = [
 		city: 'Gliwice',
 		img: 'gliwice.jpg',
 	},
+	{
+		city: 'Olsztyn',
+		img: 'Olsztyn.jpg',
+	},
 ]
 
 const text =
