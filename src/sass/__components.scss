@@ -14,7 +14,7 @@
 	width: fit-content;
 	text-decoration: none;
 	color: c.$light-font-color;
-	transition: background-color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
 	cursor: pointer;
 	&:hover {
 		background-color: c.$main-color;
@@ -33,12 +33,6 @@
 	&--active {
 		background-color: c.$main-color;
 		color: c.$light-font-color;
-		transition: color 0.3s, background-color 0.3s;
-		&:hover,
-		&:active {
-			background: none;
-			color: c.$dark-font-color;
-		}
 	}
 }
 .block {

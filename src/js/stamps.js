@@ -1,58 +1,87 @@
+const URL = './dist/img/'
+
 const data = [
 	{
-		city: 'Białystok',
-		text: 'Białystok to piękne miasto na wschodzie Polski, znane z bogatej historii i pięknych zabytków. Znaczki pocztowe z Białegostoku są niezwykle cenne i poszukiwane przez kolekcjonerów.',
-		img: 'https://ocdn.eu/pulscms-transforms/1/iO8k9kpTURBXy85MjNkNmU5ZDFhYjIwMDJkZWEzYzZkODA5NTY0NjBiYi5qcGeTlQMBAM0P1c0I6JUCzQSwAMPDkwmmNGNkOTVjBt4AAaEwAQ/bialystok.jpeg',
+		city: 'Warszawa',
+		img: 'Warszawa.jpg',
 	},
 	{
-		city: 'Raków',
-		text: 'Raków to urokliwa miejscowość w Polsce, otoczona malowniczą przyrodą. Znaczki pocztowe z Rakowa są popularne ze względu na swoją unikalność i uroczysty design.',
-		img: 'https://upload.wikimedia.org/wikipedia/commons/8/86/Plac_Wolno%C5%9Bci_w_Rakowie_9.jpg',
+		city: 'Kraków',
+		img: 'Kraków.jpg',
+	},
+	{
+		city: 'Łódź',
+		img: 'Łódź.avif',
+	},
+	{
+		city: 'Wrocław',
+		img: 'Wroclaw.avif',
+	},
+	{
+		city: 'Poznań',
+		img: 'Poznań.jpeg',
+	},
+	{
+		city: 'Gdańsk',
+		img: 'Gdańsk.avif',
+	},
+	{
+		city: 'Szczecin',
+		img: 'Szczecin.jpg',
+	},
+	{
+		city: 'Bydgoszcz',
+		img: 'Bydgoszcz.jpg',
+	},
+	{
+		city: 'Lublin',
+		img: 'Lublin.jpg',
+	},
+	{
+		city: 'Białystok',
+		img: 'Białystok.jpg',
+	},
+	{
+		city: 'Katowice ',
+		img: 'Katowice.jpg',
+	},
+	{
+		city: 'Gdynia',
+		img: 'Gdynia.jpg',
+	},
+	{
+		city: 'Radom',
+		img: 'Radom.jpeg',
+	},
+	{
+		city: 'Toruń',
+		img: 'Toruń.jpg',
 	},
 	{
 		city: 'Kielce',
-		text: 'Kielce to dynamicznie rozwijające się miasto, które łączy w sobie nowoczesność z tradycją. Znaczki pocztowe z Kielc są znane z pięknego wzornictwa i wysokiej jakości wykonania.',
-		img: 'https://kielce.travel/media/cache/homepage_slider/uploads/6169520eb092f.JPG',
+		img: 'Kielce.jpeg',
 	},
 	{
-		city: 'Białystok',
-		text: 'Białystok to piękne miasto na wschodzie Polski, znane z bogatej historii i pięknych zabytków. Znaczki pocztowe z Białegostoku są niezwykle cenne i poszukiwane przez kolekcjonerów.',
-		img: 'https://ocdn.eu/pulscms-transforms/1/iO8k9kpTURBXy85MjNkNmU5ZDFhYjIwMDJkZWEzYzZkODA5NTY0NjBiYi5qcGeTlQMBAM0P1c0I6JUCzQSwAMPDkwmmNGNkOTVjBt4AAaEwAQ/bialystok.jpeg',
+		city: 'Rzeszów',
+		img: 'Rzeszów.jpg',
 	},
 	{
-		city: 'Raków',
-		text: 'Raków to urokliwa miejscowość w Polsce, otoczona malowniczą przyrodą. Znaczki pocztowe z Rakowa są popularne ze względu na swoją unikalność i uroczysty design.',
-		img: 'https://upload.wikimedia.org/wikipedia/commons/8/86/Plac_Wolno%C5%9Bci_w_Rakowie_9.jpg',
-	},
-	{
-		city: 'Kielce',
-		text: 'Kielce to dynamicznie rozwijające się miasto, które łączy w sobie nowoczesność z tradycją. Znaczki pocztowe z Kielc są znane z pięknego wzornictwa i wysokiej jakości wykonania.',
-		img: 'https://kielce.travel/media/cache/homepage_slider/uploads/6169520eb092f.JPG',
-	},
-	{
-		city: 'Białystok',
-		text: 'Białystok to piękne miasto na wschodzie Polski, znane z bogatej historii i pięknych zabytków. Znaczki pocztowe z Białegostoku są niezwykle cenne i poszukiwane przez kolekcjonerów.',
-		img: 'https://ocdn.eu/pulscms-transforms/1/iO8k9kpTURBXy85MjNkNmU5ZDFhYjIwMDJkZWEzYzZkODA5NTY0NjBiYi5qcGeTlQMBAM0P1c0I6JUCzQSwAMPDkwmmNGNkOTVjBt4AAaEwAQ/bialystok.jpeg',
-	},
-	{
-		city: 'Raków',
-		text: 'Raków to urokliwa miejscowość w Polsce, otoczona malowniczą przyrodą. Znaczki pocztowe z Rakowa są popularne ze względu na swoją unikalność i uroczysty design.',
-		img: 'https://upload.wikimedia.org/wikipedia/commons/8/86/Plac_Wolno%C5%9Bci_w_Rakowie_9.jpg',
-	},
-	{
-		city: 'Kielce',
-		text: 'Kielce to dynamicznie rozwijające się miasto, które łączy w sobie nowoczesność z tradycją. Znaczki pocztowe z Kielc są znane z pięknego wzornictwa i wysokiej jakości wykonania.',
-		img: 'https://kielce.travel/media/cache/homepage_slider/uploads/6169520eb092f.JPG',
+		city: 'Gliwice',
+		img: 'gliwice.jpg',
 	},
 ]
+
+const text =
+	'Zachęcamy serdecznie do nawiązania kontaktu w celu uzyskania wyceny oraz ewentualnego rozważenia sprzedaży kolekcji znaczków pocztowych. Jesteśmy otwarci na rozmowę i chętnie pomożemy w każdej kwestii związanej z Państwa kolekcją.'
+
 const stampsMenu = document.getElementById('stampsMenu')
 const cardTitle = document.getElementById('cardTitle')
 const cardUrl = document.getElementById('cardUrl')
 const cardDescription = document.getElementById('cardDescription')
 
 cardTitle.textContent = data[0].city
-cardDescription.textContent = data[0].text
-cardUrl.setAttribute('src', data[0].img)
+cardDescription.textContent = text
+cardUrl.setAttribute('src', URL + data[0].img)
 
 const toggleActive = () => {
 	const buttons = stampsMenu.querySelectorAll('button')
@@ -78,10 +107,17 @@ data.forEach(item => {
 		button.classList.add('button--active')
 
 		cardTitle.textContent = item.city
-		cardDescription.textContent = item.text
-		cardUrl.setAttribute('src', item.img)
+		cardDescription.textContent = text
+		cardUrl.setAttribute('alt', item.city)
+		cardUrl.setAttribute('src', URL + item.img)
 	})
 
 	button.setAttribute('href', '#stamps')
+
+	if (isFirst) {
+		button.classList.add('button--active')
+		isFirst = false
+	}
+
 	stampsMenu.appendChild(button)
 })
