@@ -2,7 +2,8 @@
 
 .contact {
 	position: relative;
-
+	color: c.$light-font-color;
+	overflow-x: hidden;
 	.wrapper {
 		margin-top: 5rem;
 	}
@@ -13,8 +14,9 @@
 		flex-wrap: wrap;
 		gap: 1rem;
 		a {
+			padding-right: 2rem;
 			text-decoration: none;
-			color: c.$dark-font-color;
+			color: c.$light-font-color;
 		}
 	}
 
@@ -34,7 +36,7 @@
 
 				label {
 					&::after {
-						content: '*';
+						content: ' *';
 						color: red;
 					}
 				}
