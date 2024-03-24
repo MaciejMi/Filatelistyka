@@ -116,7 +116,7 @@ data.forEach(item => {
 		cardUrl.setAttribute('src', URL + item.img)
 	})
 
-	button.setAttribute('href', '#stamps')
+	button.setAttribute('href', '#imageBox')
 
 	if (isFirst) {
 		button.classList.add('button--active')
